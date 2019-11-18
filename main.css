@@ -47,19 +47,44 @@ li {
     color: #CF649A;
 }
 
-/* Header */
+.whitey {
+    background-color: #F8F9FA
+}
 
-header {
+
+.dark-grey {
+    background-color: #343A40;
+}
+
+.black {
+    background-color: #212529;
+}
+
+.background-dark-blue {
     background-color: #155592;
 }
 
-/* Main */
-
-main {
+.background-hell-blue {
     background-color: #1971C2;
 }
 
-.wrapper {
+/* Hover */
+
+.white-background:hover div {
+    background-color: #fff;
+}
+
+h1 a:hover {
+    color: rgba(34, 147, 252, 0.829);
+}
+
+.white-hover:hover i {
+    color: #fff;
+}
+
+/*  Main */
+
+.main-wrapper {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -69,13 +94,7 @@ main {
     grid-template-columns: 1fr;
 }
 
-.wrapper p {
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.top-box {
+.box-top {
     width: 100%;
     padding: 0.5rem 1.5rem 2rem 1.5rem;
     background-color: #fff;
@@ -84,6 +103,9 @@ main {
     align-items: flex-start;
     justify-content: center;
     border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #project-name {
@@ -114,7 +136,7 @@ main {
     padding-left: 1.5rem;
 }
 
-.bottom-box {
+.box-bottom {
     width: 100%;
     background-color: #F1F3F5;
     display: flex;
@@ -124,9 +146,6 @@ main {
     padding: 0.5rem 1.5rem;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
-
-.bottom-box p {
     font-size: 0.7rem;
 }
 
@@ -138,17 +157,10 @@ main {
     left: 0.5rem;
 }
 
-.ways {
-    background-color: #F8F9FA
-}
+/*  article ways */
 
-.contact {
-    background-color: #343A40;
-}
 
-footer {
-    background-color: #212529;
-}
+
 
 @media screen and (max-width: 576px) {
 
@@ -179,26 +191,75 @@ header {
     padding: 1.5rem 2rem;
 }
 
-.white-background:hover div {
-    background-color: #fff;
+.fa-user-circle {
+    font-size: 1.3rem;
+    color: #B6CAE2;
 }
+
+/* Typography} */
 
 h1 a {
     font-size: 1.7rem;
     color: #fff;
 }
 
-h1 a:hover {
+h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+h2+p {
+    color: rgba(255, 255, 255, 0.678);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+h3+p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 2.7rem;
+}
+
+h4 {
+    font-size:1.8rem;
+    text-align: center;
+    color: #495057;
+    margin-bottom: 2.5rem;
+}
+
+h5 {
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    color: #495057;
+}
+
+.medium-box:hover h5 {
     color: rgba(34, 147, 252, 0.829);
 }
 
-.fa-user-circle {
-    font-size: 1.3rem;
-    color: #B6CAE2;
+h6 {
+    color: #495057;
+    text-align: center;
+    font-size: 1rem;
 }
 
-.white-hover:hover i {
-    color: #fff;
+.help p {
+    color: #495057;
+    text-align: center;
+}
+
+.contact h6 {
+    text-transform: uppercase;
+    color: #71777E;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-align: left;
 }
 
 /* Main */
@@ -215,19 +276,7 @@ p:nth-child(n) {
     padding: 1.3rem 0;
 }
 
-h2.start {
-    font-size: 2.3rem;
-    text-align: center;
-    color: #fff;
-}
-
-.start+p {
-    color: rgba(255, 255, 255, 0.678);
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-/* artcile */
+/* article */
 
 .features {
     display: flex;
@@ -242,17 +291,7 @@ h2.start {
     padding-right: 1rem;
 }
 
-.features h2 {
-    color: #fff;
-    font-size: 1.2rem;
-}
-
-.features p {
-    color: rgba(255, 255, 255, 0.7);
-    padding: 0.5rem 0rem 3rem 2.6rem;
-}
-
-/* Ways section */
+/* Section */
 
 .ways {
     padding: 3rem;
@@ -260,13 +299,6 @@ h2.start {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-
-.ways h2 {
-    font-size:1.8rem;
-    text-align: center;
-    color: #495057;
-    margin-bottom: 2.5rem;
 }
 
 .download-wrapper {
@@ -296,11 +328,7 @@ h2.start {
     font-size: 2.2rem;
 }
 
-.medium-box:hover h3 {
-    color: rgba(34, 147, 252, 0.829);
-}
-
-.container {
+.container-apps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -322,10 +350,6 @@ h2.start {
     border-radius: 3px;
     padding: 1.5rem 0.5rem;
     text-align: center;
-}
-
-h4 {
-    color: #495057;
 }
 
 .headset-wrapper {
@@ -353,21 +377,9 @@ h4 {
     margin-bottom: 3rem;
 }
 
-.help h5 {
-    color: #495057;
-    text-align: center;
-    font-size: 1rem;
-}
-
 .help a{
     text-decoration: underline;
 }
-
-.help p {
-    color: #495057;
-    text-align: center;
-}
-
 
 /* Contact */
 
@@ -377,14 +389,6 @@ h4 {
     grid-template-rows: 1fr 1fr;
     grid-gap: 2rem;
     padding: 3rem;
-}
-
-.contact h5 {
-    text-transform: uppercase;
-    color: #71777E;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-bottom: 0.8rem;
 }
 
 .contact li {
@@ -399,7 +403,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: end;
     font-size: 0.75rem;
     color: #71777E;
 }
@@ -409,6 +413,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 1rem;
+    margin-bottom: -1rem;
 }
 
 .terms a {
