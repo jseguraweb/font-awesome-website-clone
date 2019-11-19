@@ -479,6 +479,13 @@ header {
     margin: -2px;
 }
 
+.fa-search {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    right: 2.5rem;
+}
+
 #desktop-navigation {
     width: 100%;
     display: flex;
