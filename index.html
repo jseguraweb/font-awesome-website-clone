@@ -13,7 +13,7 @@
 
 <body>
     <header class="background-dark-blue">
-        <nav>
+        <nav id="mobile-navigation">
             <button id="toggle-navbar">
                 <a class="white-background" href="">
                     <div class="bar"></div>
@@ -35,7 +35,34 @@
                 </ul>
             </div>
         </nav>
-        <h1><a href="#"><i class="fab fa-font-awesome-flag"></i> Font Awesome</a></h1>
+        <nav id="desktop-navigation">
+            <a href="#"><i class="fab fa-font-awesome-flag"></i></a>
+            <input id="search" type="text" class="fas" placeholder="Search icons... &#xf002;">
+            <ul id="list-menu">
+                <a href="">
+                    <li id="start-option">Start</li>
+                </a>
+                <a href="">
+                    <li>Icons</li>
+                </a>
+                <a href="">
+                    <li>Docs</li>
+                </a>
+                <a href="">
+                    <li>Support</li>
+                </a>
+                <a href="">
+                    <li>Upgrade</li>
+                </a>
+                <a href="">
+                    <li>Blog</li>
+                </a>
+                <a href="">
+                    <li>T-Shirts</li>
+                </a>
+            </ul>
+        </nav>
+        <h1 id="title"><a href="#"><i class="fab fa-font-awesome-flag"></i> Font Awesome</a></h1>
         <div class="user">
             <a class="white-hover" href="">
                 <i class="fas fa-user-circle"></i>
@@ -53,9 +80,9 @@
                 <p>
                     What's the name of your project or site?
                 </p>
-                <input id="project-name" type="text" placeholder="e.g. Time Turner App or spew.org &#xf0b1;">
+                <input id="project-name" type="text" placeholder="e.g. Time Turner App or spew.org">
                 <button id="create-button">
-                    <h3>Create & Use This Kit <i class="fas fa-arrow-right"></i></h3>
+                    Create & Use This Kit <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
             <div class="box-bottom">
