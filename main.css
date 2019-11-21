@@ -179,7 +179,7 @@ h1 a:hover {
 }
 
 #toggle-menu {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #155592;
     top: 0;
