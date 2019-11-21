@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Font Awesome</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/b1c25c50a2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
     <header class="background-dark-blue">
         <nav id="mobile-navigation">
-            <button id="toggle-navbar">
+            <button id="toggle-navbar" onclick="openMenu()">
                 <a class="white-background" href="">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -23,15 +23,16 @@
             </button>
             <div id="toggle-menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Start</li>
-                    <li>Icons</li>
-                    <li>Docs for Web</li>
-                    <li>Docs for Desktop</li>
-                    <li>Upgrade</li>
-                    <li>Blog</li>
-                    <li>T-Shirts</li>
-                    <li>Support</li>
+                    <li id="close-x" onclick="closeMenu()"><a href="">X</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Start</a></li>
+                    <li><a href="">Icons</a></li>
+                    <li><a href="">Docs for Web</a></li>
+                    <li><a href="">Docs for Desktop</a></li>
+                    <li><a href="">Upgrade</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">T-Shirts</a></li>
+                    <li><a href="">Support</a></li>
                 </ul>
             </div>
         </nav>
@@ -237,6 +238,13 @@
             </p>
         </div>
     </footer>
+
+    <script>
+
+        const mobileMenu = document.getElementById("toggle-menu");
+        const openMenu = () => mobileMenu.style.display = "block";
+        const closeMenu = () => mobileMenu.style.display = "none";
+    </script>
 </body>
 
 </html>

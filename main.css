@@ -179,7 +179,58 @@ h1 a:hover {
 }
 
 #toggle-menu {
-    display: none;
+    display: block;
+    position: absolute;
+    background-color: #155592;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    box-shadow: 1px 0px 5px #fff;
+}
+
+#toggle-menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#toggle-menu a {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+#toggle-menu a:hover {
+    color: #fff;
+}
+
+#close-x {
+    font-size: 2rem;
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+#close-x a {
+    color: #fff;
+}
+
+#close-x::after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: -4px;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 
 #toggle-navbar {
