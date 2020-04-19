@@ -1,6 +1,6 @@
 # <a href="https://jseguraweb.github.io/font-awesome-website-clone/">font-awesome-website-clone</a>
 
-> CSS Project: create the illusion of a character walking with pure CSS
+> CSS Project: create a clone of the Font Awesome Website
 
 ![](screenshot.png)
 
